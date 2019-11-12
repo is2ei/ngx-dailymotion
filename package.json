@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.803.18",
+    "@angular-devkit/build-ng-packagr": "~0.803.18",
+    "@angular/cli": "^8.3.18",
+    "@angular/compiler-cli": "~8.2.13",
+    "@angular/core": "^8.2.13",
+    "@storybook/cli": "^5.2.6",
+    "ng-packagr": "^5.4.0",
+    "tsickle": "^0.37.0",
+    "typescript": "~3.5.3"
+  },
+  "dependencies": {
+    "tslib": "^1.10.0"
+  }
+}
