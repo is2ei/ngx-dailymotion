@@ -1,11 +1,21 @@
 {
+  "name": "ngx-dailymotion",
+  "description": "Dailymotion player component for Angular.",
+  "license": "MIT",
+  "scripts": {
+    "start": "ng serve demo"
+  },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.803.18",
+    "@angular-devkit/build-angular": "^0.803.21",
     "@angular-devkit/build-ng-packagr": "~0.803.18",
     "@angular/cli": "^8.3.18",
+    "@angular/compiler": "^8.2.14",
     "@angular/compiler-cli": "~8.2.13",
     "@angular/core": "^8.2.13",
-    "@storybook/cli": "^5.2.6",
+    "@angular/platform-browser": "^8.2.14",
+    "@angular/platform-browser-dynamic": "^8.2.14",
+    "@babel/core": "^7.7.4",
+    "babel-loader": "^8.0.6",
     "ng-packagr": "^5.4.0",
     "tsickle": "^0.37.0",
     "typescript": "~3.5.3"
