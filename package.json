@@ -7,8 +7,8 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.803.21",
-    "@angular-devkit/build-ng-packagr": "~0.803.18",
-    "@angular/cli": "^8.3.18",
+    "@angular-devkit/build-ng-packagr": "~0.803.21",
+    "@angular/cli": "^8.3.21",
     "@angular/compiler": "^8.2.14",
     "@angular/compiler-cli": "~8.2.13",
     "@angular/core": "^8.2.13",
