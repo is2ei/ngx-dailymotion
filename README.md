@@ -1,2 +1,4 @@
-# ngx-dailymotion
+ngx-dailymotion
+===
+
 Dailymotion player component for Angular.
