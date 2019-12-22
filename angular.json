@@ -5,7 +5,18 @@
   "projects": {
     "ngx-dailymotion": {
       "projectType": "library",
-      "root": ""
+      "root": "projects/ngx-dailymotion",
+      "sourceRoot": "projects/ngx-dailymotion/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-dailymotion/tsconfig.lib.json",
+            "project": "projects/ngx-dailymotion/ng-package.json"
+          }
+        }
+      }
     },
     "demo": {
       "projectType": "application",

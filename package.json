@@ -3,6 +3,7 @@
   "description": "Dailymotion player component for Angular.",
   "license": "MIT",
   "scripts": {
+    "build:lib": "ng build ngx-dailymotion",
     "start": "ng serve demo"
   },
   "devDependencies": {
