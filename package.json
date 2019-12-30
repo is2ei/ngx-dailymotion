@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "build:lib": "ng build ngx-dailymotion",
+    "build:demo": "ng build demo --prod",
     "test:lib": "ng test ngx-dailymotion",
     "start": "ng serve demo"
   },
