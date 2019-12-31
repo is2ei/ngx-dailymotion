@@ -1,24 +1,21 @@
 # NgxDailymotion
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.13.
+## Overview
 
-## Code scaffolding
+```html
+<dailymotion
+  video=""
 
-Run `ng generate component component-name --project ngx-dailymotion` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-dailymotion`.
-> Note: Don't forget to add `--project ngx-dailymotion` or else it will be added to the default project in your `angular.json` file. 
+></dailymotion>
+...
+<script src="https://api.dmcdn.net/all.js"></script>
+```
 
-## Build
+## API
 
-Run `ng build ngx-dailymotion` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Components
 
-## Publishing
-
-After building your library with `ng build ngx-dailymotion`, go to the dist folder `cd dist/ngx-dailymotion` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ngx-dailymotion` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+| Name | Type | Description |
+| ------------- | ------------- | ------------- |
+| video | string | A string representing a video ID – of the form xID (e.g. xwr14q) for public-accessible videos or kID (e.g. kABCD1234) for private-accessible videos. |
+| autoplay | bool | Starts the playback of the video automatically after the player loads. |
