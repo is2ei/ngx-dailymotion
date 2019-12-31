@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'demo';
+  autoplay = false;
+  controls = false;
+
+  autoplayCheckedHandler(e) {
+    this.autoplay = (e.checked === 'true');
+  }
+  controlsCheckedHandler(e) {
+    console.log("e", e);
+    this.controls = e.checked;
+  }
 }

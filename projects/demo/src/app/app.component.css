@@ -1,0 +1,11 @@
+.container__main {
+  margin: auto;
+  padding-top: 30px;
+  height: 400px;
+  width: 600px;
+}
+
+.forms {
+  float: left;
+  padding-right: 30px;
+}

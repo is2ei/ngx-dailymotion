@@ -1,4 +1,19 @@
 <mat-toolbar
   color="primary"
 >ngx-dailymotion</mat-toolbar>
-<dailymotion></dailymotion>
+<p>This is demo site for <a href="https://www.npmjs.com/package/ngx-dailymotion">ngx-dailymotion</a>.</p>
+<div class="container__main">
+  <div class="forms">
+    <p>Properties</p>
+    <mat-checkbox
+      (change)="autoplayCheckedHandler($event)"
+    >Autoplay</mat-checkbox>
+    <mat-checkbox
+      (change)="controlsCheckedHandler($event)"
+    >Controls</mat-checkbox>
+</div>
+  <dailymotion
+    autoplay="{{autoplay}}"
+  ></dailymotion
+    >
+</div>
