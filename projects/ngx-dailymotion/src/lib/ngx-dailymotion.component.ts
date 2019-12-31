@@ -2,6 +2,7 @@ import {
   Component,
   Input,
   OnChanges,
+  SimpleChanges,
   AfterViewInit,
   ElementRef,
   ViewChild
@@ -18,13 +19,20 @@ declare global {
 })
 export class NgxDailymotionComponent implements AfterViewInit, OnChanges {
 
+  @Input() video: string = '';
   @Input() autoplay: boolean = false;
   @Input() autoplayMute: boolean = false;
   @Input() controls: boolean = false;
   @Input() mute: boolean = false;
   @Input() quality: string = 'auto';
   @Input() uiLogo: boolean = false;
+  @Input() queueAutoplayNext: boolean = false;
+  @Input() queueEnable: boolean = false;
+  @Input() sharingEnable: boolean = false;
+  @Input() start: number = 0;
   @Input() uiTheme: string = 'dark';
+
+  @Input() pause: boolean = false;
 
   @ViewChild('dailymotion', {static: false}) div;
 
@@ -32,12 +40,16 @@ export class NgxDailymotionComponent implements AfterViewInit, OnChanges {
 
   constructor(
     public element: ElementRef<HTMLElement>
-  ) { }
+  ) {}
 
   ngAfterViewInit() {
+    if (!this.video) {
+      return;
+    }
+
     // https://developer.dailymotion.com/player/#player-parameters
     const options = {
-      video: 'xwr14q',
+      video: this.video,
       params: {
         'autoplay': this.autoplay,
         'controls': this.controls,
@@ -48,22 +60,30 @@ export class NgxDailymotionComponent implements AfterViewInit, OnChanges {
     this.player = window.DM.player(this.div.nativeElement, options)
   }
 
-  ngOnChanges() {
+  ngOnChanges(changes: SimpleChanges) {
     if(!this.player) {
       return;
     }
-    console.log("this.autoplay", this.autoplay);
-    console.log("this.controls", this.controls);
-    // https://developer.dailymotion.com/player/#player-parameters
-    const options = {
-      video: 'xwr14q',
-      params: {
-        'autoplay': this.autoplay,
-        'controls': this.controls,
-        'ui-logo': this.uiLogo,
-        'ui-theme': this.uiTheme
+
+    for (let propName in changes) {
+      if (propName === 'video') {
+        // https://developer.dailymotion.com/player/#player-parameters
+        const options = {
+          video: this.video
+        };
+        this.player.load(options);
+      } else if (propName === 'controls') {
+        this.player.setControls(this.controls);
+      } else if (propName === 'pause') {
+        console.log("TEST");
+        if (changes[propName].currentValue === 'true') {
+          this.player.pause()
+        } else {
+          console.log("PLAY");
+          this.player.play();
+        }
       }
-    };
-    this.player.load(options);
+    }
+
   }
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatCheckboxChange } from '@angular/material/checkbox';
 
 @Component({
   selector: 'app-root',
@@ -6,14 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  autoplay = false;
   controls = false;
+  pause = false;
 
-  autoplayCheckedHandler(e) {
-    this.autoplay = (e.checked === 'true');
+  controlsCheckedHandler(event: MatCheckboxChange) {
+    this.controls = event.checked;
   }
-  controlsCheckedHandler(e) {
-    console.log("e", e);
-    this.controls = e.checked;
+  pauseCheckedHandler(event: MatCheckboxChange) {
+    this.pause = event.checked;
   }
 }

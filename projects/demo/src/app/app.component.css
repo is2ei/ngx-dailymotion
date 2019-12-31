@@ -2,10 +2,16 @@
   margin: auto;
   padding-top: 30px;
   height: 400px;
-  width: 600px;
+  width: 700px;
 }
 
-.forms {
+.properties {
   float: left;
   padding-right: 30px;
+}
+
+.property {
+  display: flex;
+  align-content: space-around;
+  height: 40px;
 }
