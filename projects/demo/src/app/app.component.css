@@ -1,3 +1,7 @@
+.container {
+  padding: 10px;
+}
+
 .container__main {
   margin: auto;
   padding-top: 30px;
