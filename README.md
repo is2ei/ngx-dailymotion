@@ -7,4 +7,4 @@ ngx-dailymotion
 
 Dailymotion player component for Angular, inspired by [u-wave/react-dailymotion](https://github.com/u-wave/react-dailymotion)
 
-[Document](./projects/ngx-dailymotion/README.md)
+[README](./projects/ngx-dailymotion/README.md)
