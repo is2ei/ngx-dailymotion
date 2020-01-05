@@ -18,5 +18,7 @@
 
 | Name | Type | Description |
 | ------------- | ------------- | ------------- |
-| video | string | A string representing a video ID – of the form xID (e.g. xwr14q) for public-accessible videos or kID (e.g. kABCD1234) for private-accessible videos. |
+| video | String | The Dailymotion video ID that identifies the video that the player will load |
+| width | String | The width of the video player. The default value is 480 |
+| height | String | 	The height of the video player. The default value is 270 |
 | autoplay | bool | Starts the playback of the video automatically after the player loads. |
