@@ -4,8 +4,9 @@
 
 ```html
 <dailymotion
-  video=""
-
+  video="xwr14q"
+  uiTheme="light"
+  autoplay="true"
 ></dailymotion>
 ...
 <script src="https://api.dmcdn.net/all.js"></script>
