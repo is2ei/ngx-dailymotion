@@ -20,6 +20,8 @@ declare global {
 export class NgxDailymotionComponent implements AfterViewInit, OnChanges {
 
   @Input() video: string = '';
+  @Input() width: number = 480;
+  @Input() height: number = 270;
   @Input() autoplay: boolean = false;
   @Input() autoplayMute: boolean = false;
   @Input() controls: boolean = false;
@@ -50,6 +52,8 @@ export class NgxDailymotionComponent implements AfterViewInit, OnChanges {
     // https://developer.dailymotion.com/player/#player-parameters
     const options = {
       video: this.video,
+      width: this.width,
+      height: this.height,
       params: {
         'autoplay': this.autoplay,
         'controls': this.controls,
