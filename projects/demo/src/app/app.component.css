@@ -19,3 +19,7 @@
   align-content: space-around;
   height: 40px;
 }
+
+.videos {
+  display: flex;
+}

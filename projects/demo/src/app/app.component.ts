@@ -7,6 +7,12 @@ import { MatCheckboxChange } from '@angular/material/checkbox';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  videos = [
+    { id: 'x26ezrb', name: 'Hackathon BeMyApp/Dailymotion' },
+    { id: 'x26ezj5', name: 'Greetings' },
+    { id: 'x26m1j4', name: 'Wildlife' }
+  ];
+  selectedVideo = this.videos[0];
   controls = false;
   pause = false;
 

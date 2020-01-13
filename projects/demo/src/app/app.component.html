@@ -4,9 +4,25 @@
 <div class="container">
   <p>This is demo site for <a href="https://www.npmjs.com/package/ngx-dailymotion">ngx-dailymotion</a>.</p>
 </div>
+
 <div class="container__main">
   <div class="properties">
-    <p>Properties</p>
+    <h3>Properties</h3>
+    <section class="property">
+      <label>Video</label>
+      <mat-radio-group
+        aria-labelledby="videos"
+        class="videos"
+        [(ngModel)]="selectedVideo"
+      >
+        <mat-radio-button
+          *ngFor="let video of videos"
+          [value]="video.id"
+        >
+          {{video.name}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </section>
     <section class="property">
       <mat-checkbox
       (change)="controlsCheckedHandler($event)"
@@ -18,9 +34,11 @@
       >Pause</mat-checkbox>
     </section>
 </div>
+
   <dailymotion
-    video="xwr14q"
+    video="{{selectedVideo.id}}"
     controls="{{controls}}"
     pause="{{pause}}"
   ></dailymotion>
+
 </div>
