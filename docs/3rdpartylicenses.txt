@@ -87,6 +87,16 @@ THE SOFTWARE.
 
 @angular/material/checkbox
 
+@angular/material/core
+
+@angular/material/form-field
+
+@angular/material/radio
+
+@angular/material/select
+
+@angular/material/slider
+
 @angular/material/toolbar
 
 @angular/platform-browser
