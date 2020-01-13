@@ -28,10 +28,8 @@ export class NgxDailymotionComponent implements AfterViewInit, OnChanges {
   @Input() controls = false;
   @Input() mute = false;
   @Input() quality = 'auto';
-  @Input() uiLogo = false;
-  @Input() queueAutoplayNext = false;
-  @Input() queueEnable = false;
   @Input() sharingEnable = false;
+  @Input() uiLogo = false;
   @Input() start = 0;
   @Input() uiTheme = 'dark';
 

@@ -24,7 +24,14 @@ import { NgxDailymotionModule } from 'ngx-dailymotion';
 
 | Name | Type | Description |
 | ------------- | ------------- | ------------- |
-| video | String | The Dailymotion video ID that identifies the video that the player will load |
-| width | String | The width of the video player. The default value is 480 |
-| height | String | 	The height of the video player. The default value is 270 |
-| autoplay | bool | Starts the playback of the video automatically after the player loads. |
+| video | string | The Dailymotion video ID that identifies the video that the player will load |
+| width | string | The width of the video player. The default value is 480 |
+| height | string | The height of the video player. The default value is 270 |
+| autoplay | boolean | Starts the playback of the video automatically after the player loads. |
+| controls | boolean | 	Whether to display the player controls or not. This parameter only removes the control bar, but keeps the startscreen and the endscreen (useful on mobile devices where the video tag needs a direct user interaction to start the playback). |
+| mute | boolean | Whether to mute the video or not. |
+| quality | ['240', '380', '480', '720', '1080', '1440', '2160'] | Specify the suggested playback quality for the video. |
+| sharing-enable | boolean | Whether to display the sharing button or not. |
+| start | number | Specify the time (in seconds) from which the video should start playing. |
+| ui-logo | boolean | Whether to display the Dailymotion logo or not. |
+| ui-theme | ['dark', 'light'] | Choose the default base colour theme. |
