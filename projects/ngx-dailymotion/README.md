@@ -2,7 +2,13 @@
 
 ## Usage
 
+```typescript
+// app.component.ts
+import { NgxDailymotionModule } from 'ngx-dailymotion';
+```
+
 ```html
+<!-- app.component.html -->
 <dailymotion
   video="xwr14q"
   uiTheme="light"
