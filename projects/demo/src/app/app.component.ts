@@ -13,6 +13,16 @@ export class AppComponent {
     { id: 'x26m1j4', name: 'Wildlife' }
   ];
   selectedVideo = this.videos[0];
+  volume = 0;
+  qualities = [
+    '240',
+    '380',
+    '480',
+    '720',
+    '1080',
+    '1440',
+    '2160'
+  ];
   controls = false;
   pause = false;
 

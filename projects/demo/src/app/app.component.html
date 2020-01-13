@@ -8,6 +8,7 @@
 <div class="container__main">
   <div class="properties">
     <h3>Properties</h3>
+
     <section class="property">
       <label 
         id=videos
@@ -27,11 +28,31 @@
         </mat-radio-button>
       </mat-radio-group>
     </section>
+
+    <section class="property">
+      <p class="volume-label">Volume</p>
+      <mat-slider
+        [(ngModel)]="volume"
+      ></mat-slider>
+    </section>
+
+    <section class="property">
+      <mat-form-field>
+        <mat-label>Quality</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let quality of qualities" [value]="quality">
+            {{quality}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </section>
+
     <section class="property">
       <mat-checkbox
       (change)="controlsCheckedHandler($event)"
     >Controls</mat-checkbox>
     </section>
+
     <section class="property">
       <mat-checkbox
       (change)="pauseCheckedHandler($event)"
