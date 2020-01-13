@@ -1,6 +1,6 @@
 # NgxDailymotion
 
-## Overview
+## Usage
 
 ```html
 <dailymotion
