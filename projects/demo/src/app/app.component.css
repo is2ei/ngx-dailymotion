@@ -6,7 +6,7 @@
   margin: auto;
   padding-top: 30px;
   height: 400px;
-  width: 700px;
+  width: 1000px;
 }
 
 .properties {
@@ -17,9 +17,19 @@
 .property {
   display: flex;
   align-content: space-around;
-  height: 40px;
+  /* height: 40px; */
 }
 
-.videos {
+.videos-label {
+  height: 20px;
+}
+
+.videos-radio-group {
   display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.videos-radio-button {
+  margin: 5px;
 }

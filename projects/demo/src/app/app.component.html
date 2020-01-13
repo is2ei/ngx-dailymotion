@@ -9,15 +9,19 @@
   <div class="properties">
     <h3>Properties</h3>
     <section class="property">
-      <label>Video</label>
+      <label 
+        id=videos
+        class="videos-label"
+      >Video</label>
       <mat-radio-group
+        class="videos-radio-group"
         aria-labelledby="videos"
-        class="videos"
         [(ngModel)]="selectedVideo"
       >
         <mat-radio-button
+          class="videos-radio-button"
           *ngFor="let video of videos"
-          [value]="video.id"
+          [value]="video"
         >
           {{video.name}}
         </mat-radio-button>
