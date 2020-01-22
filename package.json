@@ -10,6 +10,7 @@
     "lint": "stylelint 'projects/**/*.css' && ng lint",
     "build:lib": "ng build ngx-dailymotion",
     "build:demo": "ng build demo --prod",
+    "test": "npm run test:lib",
     "test:lib": "ng test ngx-dailymotion",
     "start": "ng serve demo"
   },
