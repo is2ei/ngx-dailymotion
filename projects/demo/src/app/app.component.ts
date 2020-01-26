@@ -13,8 +13,9 @@ export class AppComponent {
     { id: 'x26m1j4', name: 'Wildlife' }
   ];
   selectedVideo = this.videos[0];
-  volume = 0;
+  volume = 0.5;
   qualities = [
+    'auto',
     '240',
     '380',
     '480',
@@ -23,6 +24,7 @@ export class AppComponent {
     '1440',
     '2160'
   ];
+  selectedQuality = this.qualities[0];
   controls = false;
   pause = false;
 

@@ -32,6 +32,7 @@ export class NgxDailymotionComponent implements AfterViewInit, OnChanges {
   @Input() uiLogo = false;
   @Input() start = 0;
   @Input() uiTheme = 'dark';
+  @Input() volume = 0.5;
 
   @Input() pause = false;
 
@@ -83,6 +84,10 @@ export class NgxDailymotionComponent implements AfterViewInit, OnChanges {
         } else {
           this.player.play();
         }
+      } else if (propName === 'quality') {
+        this.player.setQuality(changes[propName].currentValue);
+      } else if (propName === 'volume') {
+        this.player.setVolume(changes[propName].currentValue);
       }
     }
 
