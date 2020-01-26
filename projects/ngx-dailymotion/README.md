@@ -1,5 +1,7 @@
 # NgxDailymotion
 
+Dailymotion player component for Angular.
+
 ## Usage
 
 ```typescript
