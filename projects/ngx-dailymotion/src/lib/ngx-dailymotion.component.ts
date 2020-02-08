@@ -4,7 +4,6 @@ import {
   OnChanges,
   SimpleChanges,
   AfterViewInit,
-  ElementRef,
   ViewChild
 } from '@angular/core';
 
