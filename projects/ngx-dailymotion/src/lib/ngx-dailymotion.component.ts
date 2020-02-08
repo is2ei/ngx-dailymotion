@@ -45,9 +45,7 @@ export class NgxDailymotionComponent implements AfterViewInit, OnChanges {
 
   player: any = null;
 
-  constructor(
-    public element: ElementRef<HTMLElement>
-  ) {}
+  constructor() {}
 
   ngAfterViewInit() {
     if (!this.video) {
