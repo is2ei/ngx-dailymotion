@@ -1,10 +1,17 @@
 import {
+
+  // Type Decorator
   Component,
   Input,
+
+  // Interface
   OnChanges,
   SimpleChanges,
   AfterViewInit,
+
+  // Type
   ViewChild
+
 } from '@angular/core';
 
 declare global {
@@ -37,7 +44,6 @@ export class NgxDailymotionComponent implements AfterViewInit, OnChanges {
   @Input() start = 0;
   @Input() uiTheme: Theme = 'dark';
   @Input() volume = 0.5;
-
   @Input() pause = false;
 
   @ViewChild('dailymotion', {static: false}) div;
