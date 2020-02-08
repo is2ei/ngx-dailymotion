@@ -19,7 +19,7 @@ type Theme =
 'dark' | 'light';
 
 @Component({
-  // tslint:disable-next-line
+  // tslint:disable-next-line component-selector
   selector: 'dailymotion',
   template: `<div #dailymotion></div>`,
   styles: []
