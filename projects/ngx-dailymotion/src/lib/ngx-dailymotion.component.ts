@@ -15,6 +15,9 @@ declare global {
 type Quality =
   'auto' | '240' | '380' | '480' | '720' | '1080' | '1440' | '2160';
 
+type Theme =
+'dark' | 'light';
+
 @Component({
   // tslint:disable-next-line
   selector: 'dailymotion',
@@ -34,7 +37,7 @@ export class NgxDailymotionComponent implements AfterViewInit, OnChanges {
   @Input() sharingEnable = false;
   @Input() uiLogo = false;
   @Input() start = 0;
-  @Input() uiTheme = 'dark';
+  @Input() uiTheme: Theme = 'dark';
   @Input() volume = 0.5;
 
   @Input() pause = false;
