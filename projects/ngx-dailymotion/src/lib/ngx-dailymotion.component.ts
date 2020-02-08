@@ -21,8 +21,7 @@ type Theme =
 @Component({
   // tslint:disable-next-line component-selector
   selector: 'dailymotion',
-  template: `<div #dailymotion></div>`,
-  styles: []
+  template: `<div #dailymotion></div>`
 })
 export class NgxDailymotionComponent implements AfterViewInit, OnChanges {
 
