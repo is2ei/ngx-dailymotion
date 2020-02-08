@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MatCheckboxChange } from '@angular/material/checkbox';
+import { Quality } from 'ngx-dailymotion';
 
 @Component({
   selector: 'app-root',

@@ -12,6 +12,9 @@ declare global {
   interface Window { DM: any; }
 }
 
+type Quality =
+  'auto' | '240' | '380' | '480' | '720' | '1080' | '1440' | '2160';
+
 @Component({
   // tslint:disable-next-line
   selector: 'dailymotion',
@@ -27,7 +30,7 @@ export class NgxDailymotionComponent implements AfterViewInit, OnChanges {
   @Input() autoplayMute = false;
   @Input() controls = false;
   @Input() mute = false;
-  @Input() quality = 'auto';
+  @Input() quality: Quality = 'auto';
   @Input() sharingEnable = false;
   @Input() uiLogo = false;
   @Input() start = 0;
