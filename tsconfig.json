@@ -11,24 +11,23 @@
     "noImplicitReturns": true,
     "strictFunctionTypes": true,
     "noImplicitAny": true,
-    "emitDecoratorMetadata": true,
-    "baseUrl": "./",
-    "sourceMap": true,
-    "declaration": false,
-    "importHelpers": true,
+    "noImplicitThis": true,
+    "strictBindCallApply": true,
     "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
     "lib": [
-      "es2018",
+      "es5",
+      "es2015",
       "dom"
     ],
+    "baseUrl": ".",
     "paths": {
       "ngx-dailymotion": [
         "dist/ngx-dailymotion"
       ]
-    }
+    },
+    "typeRoots": [
+      "node_modules/@types"
+    ]
   }
  }
  
