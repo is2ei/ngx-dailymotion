@@ -2,7 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "experimentalDecorators": true,
-    "module": "es2015",
+    "module": "esnext",
     "moduleResolution": "node",
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,

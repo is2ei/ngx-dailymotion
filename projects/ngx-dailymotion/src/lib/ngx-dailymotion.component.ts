@@ -40,7 +40,7 @@ export class NgxDailymotionComponent implements AfterViewInit, OnChanges {
   @Input() volume = 0.5;
   @Input() pause = false;
 
-  @ViewChild('dailymotion', {static: false})
+  @ViewChild('dailymotion')
   dailymotion: ElementRef<HTMLElement>;
 
   player: any = null;
