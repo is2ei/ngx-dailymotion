@@ -9,7 +9,9 @@ import {
 } from '@angular/core';
 
 declare global {
-  interface Window { DM: any; }
+  interface Window {
+    DM: any;
+  }
 }
 
 type Quality =
@@ -18,6 +20,10 @@ type Quality =
 type Theme =
 'dark' | 'light';
 
+/**
+ * Angular component that renders a Dailymotion player via
+ * the Dailymotion player iframe API.
+ */
 @Component({
   // tslint:disable-next-line component-selector
   selector: 'dailymotion',
