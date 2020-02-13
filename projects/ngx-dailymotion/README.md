@@ -7,7 +7,11 @@
 
 Dailymotion player component for Angular.
 
-## Usage
+## Getting started
+
+```shell
+$ npm i ngx-dailymotion
+```
 
 ```typescript
 // app.component.ts
