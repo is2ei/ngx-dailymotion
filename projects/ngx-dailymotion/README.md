@@ -5,7 +5,7 @@
 [![codecov](https://codecov.io/gh/is2ei/ngx-dailymotion/branch/master/graph/badge.svg)](https://codecov.io/gh/is2ei/ngx-dailymotion)
 [![Join the chat at https://gitter.im/is2ei/ngx-dailymotion](https://badges.gitter.im/is2ei/ngx-dailymotion.svg)](https://gitter.im/is2ei/ngx-dailymotion?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Dailymotion player component for Angular.
+This component provides a simple angular wrapper around the embed [Dailymotion player API](https://developer.dailymotion.com/player/).
 
 ## Getting started
 
