@@ -1,17 +1,11 @@
 import {
-
-  // Type Decorator
+  AfterViewInit,
   Component,
+  ElementRef,
   Input,
-
-  // Interface
   OnChanges,
   SimpleChanges,
-  AfterViewInit,
-
-  // Type
   ViewChild
-
 } from '@angular/core';
 
 declare global {
@@ -46,7 +40,8 @@ export class NgxDailymotionComponent implements AfterViewInit, OnChanges {
   @Input() volume = 0.5;
   @Input() pause = false;
 
-  @ViewChild('dailymotion', {static: false}) div;
+  @ViewChild('dailymotion', {static: false})
+  dailymotion: ElementRef<HTMLElement>;
 
   player: any = null;
 
@@ -69,7 +64,7 @@ export class NgxDailymotionComponent implements AfterViewInit, OnChanges {
         'ui-theme': this.uiTheme
       }
     };
-    this.player = window.DM.player(this.div.nativeElement, options);
+    this.player = window.DM.player(this.dailymotion.nativeElement, options);
   }
 
   ngOnChanges(changes: SimpleChanges) {
