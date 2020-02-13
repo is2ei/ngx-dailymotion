@@ -22,6 +22,12 @@
       ],
       "eofline": true,
       "no-construct": true,
+      "no-duplicate-variable": true,
+      "no-eval": true,
+      "no-arg": true,
+      "no-internal-module": true,
+      "no-trailing-whitespace": true,
+      "no-bitwise": true,
       "array-type": false,
       "arrow-parens": false,
       "deprecation": {
