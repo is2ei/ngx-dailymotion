@@ -1,11 +1,13 @@
 import {
   AfterViewInit,
+  ChangeDetectionStrategy,
   Component,
   ElementRef,
   Input,
   OnChanges,
   SimpleChanges,
-  ViewChild
+  ViewChild,
+  ViewEncapsulation
 } from '@angular/core';
 
 declare global {
@@ -27,6 +29,9 @@ type Theme =
 @Component({
   // tslint:disable-next-line component-selector
   selector: 'dailymotion',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  encapsulation: ViewEncapsulation.None,
+  // This div is *replaced* by the Dailymotion player embed.
   template: `<div #dailymotion></div>`
 })
 export class NgxDailymotionComponent implements AfterViewInit, OnChanges {
