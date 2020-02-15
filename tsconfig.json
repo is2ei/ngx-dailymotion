@@ -19,7 +19,7 @@
       "es2015",
       "dom"
     ],
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
       "ngx-dailymotion": [
         "dist/ngx-dailymotion"
