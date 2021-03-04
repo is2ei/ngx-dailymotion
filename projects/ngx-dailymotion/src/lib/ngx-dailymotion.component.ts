@@ -100,7 +100,10 @@ export class NgxDailymotionComponent implements AfterViewInit, OnChanges {
         }
       } else if (propName === 'quality') {
         this.player.setQuality(changes[propName].currentValue);
-      } else if (propName === 'volume') {
+      } 
+      else if (propName === 'seek') {
+        this.player.seek(changes[propName].currentValue);
+      }else if (propName === 'volume') {
         this.player.setVolume(changes[propName].currentValue);
       }
     }
